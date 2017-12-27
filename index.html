@@ -4,8 +4,22 @@
   <meta charset="utf-8">
   <title>Cygwin Installer Dev.</title>
   <meta name="description" content="Cygwin Installer Dev.">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
 </head>
 <body>
   <h1>Cygwin Installer Dev.</h1>
+
+  <div id="color_div">ここのDIVの枠線をjQueryで変更します</div>
+  <div id="pkgs"></div>
+
+  <script>
+  jQuery(function ($) {
+    $("#color_div").css("border", "1px solid red");
+    //setPkgs("a,b,c");
+  });
+  function setPkgs(pkgs) {
+    $("#pkgs").text(pkgs);
+  }
+  </script>  
 </body>
 </html>
